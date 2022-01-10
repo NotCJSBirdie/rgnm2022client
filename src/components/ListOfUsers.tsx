@@ -10,7 +10,7 @@ const ListOfUsers = () => {
     console.log(data);
   }
 
-  const [deleteUser] = useMutation(DELETE_USER);
+  const [deleteUser, { error }] = useMutation(DELETE_USER);
 
   return (
     <div>
@@ -19,6 +19,7 @@ const ListOfUsers = () => {
           return (
             <div>
               {user.name} / {user.username}
+              //// {user.password}
               <button
                 onClick={() => {
                   deleteUser({
