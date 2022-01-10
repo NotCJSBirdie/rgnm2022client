@@ -7,7 +7,7 @@ import ListOfUsers from "./components/ListOfUsers";
 
 function App() {
   const client = new ApolloClient({
-    uri: "http://localhost:3001/graphql",
+    uri: "https://rgnm2022server.herokuapp.com/graphql",
     cache: new InMemoryCache(),
   });
 
